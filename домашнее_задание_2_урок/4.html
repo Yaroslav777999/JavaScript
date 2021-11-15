@@ -37,6 +37,7 @@
      * @description Функция sum возвращает сумму запрошенных чисел
      * @param {number} a - Первое число
      * @param {number} b - Второе число
+     * @returns {number} Сумму переданных чисел
      */
     function sum(a, b) {
       return a + b;
@@ -47,21 +48,19 @@
      * @returns Если a больше b функция возвратит разность запрошенных чисел, Если a меньше b функция возвратит разность большего и меньшего числа, если a равно b функция возвратит 0 
      * @param {number} a - Первое число
      * @param {number} b - Второе число
-     */ 
+     */
     function diff(a, b) {
-      if (a > b)
+      if (a > b) {
         return a - b;
-      else if (a < b) {
-        return b - a;
-      } else {
-        return 0;
       }
+      return b - a;
     }
 
     /** 
      * @description Функция mult возвращает произведение запрошенных чисел
      * @param {number} a - Первое число
      * @param {number} b - Второе число
+     * @returns {number} Произведение переданных чисел
      */
     function mult(a, b) {
       return a * b;
@@ -71,6 +70,7 @@
      * @description Функция mult возвращает частное запрошенных чисел
      * @param {number} a - Первое число
      * @param {number} b - Второе число
+     * @returns {number} Разность переданных чисел
      */
     function div(a, b) {
       return a / b;
