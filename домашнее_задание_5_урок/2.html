@@ -70,8 +70,8 @@
     6. Добавьте атрибут data-dd со значением 3 элементу у которого существует
     атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
      */
-    const atr = document.querySelector('.menu');
-    console.log(atr.getAttribute('aria-labelledby'));
+    document.querySelector('[aria-labelledby="dropdownMenuButton"]');
+    
     atr.dataset.dd = '3';
 
     /*
@@ -79,7 +79,8 @@
      */
     const atrT = document.querySelector('.dropdown-toggle');
     atrT.removeAttribute('type');
-    // (почему то не работает метод из лекции) delete atrT.dataset.type;
+
+    // ( так сработает только если атрибут называется data-type, здесь атрибут называется просто type.) delete atrT.dataset.type;
 
 
     /*
@@ -90,7 +91,7 @@
      */
     const attributes = document.querySelector('.btn.dropdown-toggle').attributes;
     for (const attribute of attributes) {
-      console.log(`Атрибут "${attribute.name}" содержит значение "${attribute.value}"`);
+      console.log(`Атрибут "${attribute.name}" содержит значение "${attribute.value}"`)
     };
   </script>
 </body>

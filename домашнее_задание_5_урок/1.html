@@ -51,6 +51,8 @@
      */
     const card_body = document.querySelector(".card-body");
     console.log(card_body.querySelectorAll(".card-link"));
+
+    // или document.querySelectorAll('.card-body .card-link');
     /*
     4. Найти первый попавшийся элемент на странице у которого есть атрибут
     data-number со значением 50 и вывести его в консоль.
@@ -78,8 +80,7 @@
     const p = document.createElement('p');
     p.textContent = 'Привет';
     const divCard = document.querySelector(".card");
-    divCard.appendChild(p);
-
+    
     divCard.insertAdjacentElement('afterbegin', p);
     // или так divCard.prepend(p);
 
