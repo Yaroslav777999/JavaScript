@@ -24,7 +24,7 @@
         "use strict"
 
         const span = document.querySelector('span');
-        const fromEl = document.getElementById('from').addEventListener('change', event => {
+        document.getElementById('from').addEventListener('change', event => {
             span.textContent = event.target.value;
         });
     </script>
